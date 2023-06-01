@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bheeshma organics-news</title>
+    <style>
+        @import url(css/bootstrap-icons.min.css);
+        @import url(css/swiper-bundle.min.css);
+        @import url(css/bootstrap.min.css);
+        @import url(css/fonts.css.css);
+        @import url(css/style.css);
+    </style>
+</head>
+
+<body>
+    <!-- header  -->
+    <header class="navbar navbar-expand-lg hedaer-bg">
+        <div class="container">
+            <a class="navbar-brand text-primary fw-bold fs-4 my-3" href="#"><img src="img/icon.png" alt=""
+                    class="col-3 p-1"><span class="text-white">Bheeshma</span></a>
+            <button class="navbar-toggler border-0 shadow-none" data-bs-toggle="collapse" data-bs-target="#dropdown">
+                <i class="bi bi-list text-white fs-3 navbar-toggler-icon"></i>
+            </button>
+            <nav class="collapse navbar-collapse" id="dropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item fw-semibold pe-2 h6"><a href="index.html"
+                            class="nav-link text-white text-uppercase">home+</a>
+                    </li>
+                    <li class="nav-item fw-semibold pe-2 h6"><a href="about.html"
+                            class="nav-link text-white text-uppercase">about+</a>
+                    </li>
+                    <li class="nav-item fw-semibold pe-2 h6"><a href="shop.html"
+                            class="nav-link text-white text-uppercase">shop+</a>
+                    </li>
+                    <li class="nav-item fw-semibold pe-2 h6"><a href="news.html"
+                            class="nav-link text-primary text-uppercase">news+</a>
+                    </li>
+                    <li class="nav-item fw-semibold pe-2 h6"><a href="history.html"
+                            class="nav-link text-white text-uppercase">history+</a>
+                    </li>
+                    <li class="nav-item fw-semibold pe-2 h6"><a href="contact.html"
+                            class="nav-link text-white text-uppercase">contact+</a>
+                    </li>
+                </ul>
+                <button class="btn btn-primary rounded-0 py-3 px-3 text-uppercase fw-semibold">get a
+                    quote</button>
+            </nav>
+            <div class="row ms-2">
+                <button class="btn btn-success btn-56 rounded-0 py-3 px-3" data-bs-toggle="collapse"
+                    data-bs-target="#search"><i class="bi bi-search  fw-bold"></i></button>
+                <button class="btn btn-success btn-56 rounded-0 py-2 px-2" id="liveAlertBtn"><i
+                        class="bi bi-person p-1 fs-4 fw-bold"></i></button>
+                <button class="btn btn-success btn-56 rounded-0 py-2 px-2 position-relative" data-bs-toggle="offcanvas"
+                    data-bs-target="#launch-offcanvas"><i class="bi bi-cart fs-4 fw-bold"></i><span
+                        class="position-absolute top-0 start-100 translate-middle badge fs-6 rounded-pill bg-primary">2</span></button>
+            </div>
+        </div>
+    </header>
+    <div class="not-fond">
+        <div class="collapse" id="search">
+            <div class="col-12 col-lg-3 ms-auto card card-body position-absolute serach-box">
+                <div class="input-group">
+                    <input type="text" class="form-control py-2 border-0" placeholder="Search....">
+                    <button class="input-group-text border-0 bg-transparent" id="basic-addon2"><i
+                            class="bi-search"></i></span>
+                </div>
+            </div>
+        </div>
+        <div id="liveAlertPlaceholder" class="position-absolute alret-position w-100"></div>
+    </div>
+    <!-- .banner section  -->
+    <section class="bg-banner padding-80 pt-0">
+        <div class="container">
+            <div class="p-3 rounded-5">
+                <div class="row align-items-center padding-80">
+                    <div class="col-12 col-lg-6">
+                        <div class="n-banner-content">
+                            <p class="text-primary fw-bold">// WELCOME TO OUR COMPANY</p>
+                            <p class="text-white display-1 fw-bold text-capitalize">news feed</p>
+                        </div>
+                    </div>
+                    <div class="col-6 text-start text-lg-end">
+                        <div class="n-banner-content">
+                            <a href="index.html"
+                                class="text-light-c text-decoration-none px-4 text-uppercase fw-bold">home |</a>
+                            <a href="news.html"
+                                class="text-primary text-decoration-none px-4 text-uppercase fw-bold">news</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- mour leatest news section  -->
+    <section class="padding-80">
+        <div class="container">
+            <h1 class="text-center text-capitalize fw-semibold col-5 mx-auto mb-4">Community News, Blogs and Articles
+            </h1>
+            <div class="row">
+                <div class="col-12 col-lg-9">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="card border-0 rounded-0 shadow prducts-img-hover">
+                                <img src="img/news-1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title bg-primary text-primary fs-6 fw-bold text-uppercase"><span
+                                            class=" bg-white border border-1 py-1 px-3">18</span><span
+                                            class="bg-primary text-white py-1 px-3">may</span></h5>
+                                    <p class="card-text footer-hover h3 text-center fw-bold my-4 ">The Front Page of
+                                        Indian Organic Food Ingredients</p>
+                                    <p class="card-text h6 fw-semibold my-4 ">Link to the Original Article</p>
+                                    <a href="#"
+                                        class="btn btn-secondary col-12 fw-semibold text-uppercase rounded-0">read
+                                        more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="card border-0 rounded-0 shadow prducts-img-hover">
+                                <div class="">
+                                    <img src="img/news-3.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title fs-6 bg-primary fw-bold text-uppercase"><span
+                                            class="bg-primary text-white border border-1 py-1 px-3">11</span><span
+                                            class="bg-white text-primary py-1 px-3">jan</span></h5>
+                                    <p class="card-text h4 footer-hover text-center fw-bold my-4 ">Nature Bio Foods’ CSR
+                                        arm LT Foundation conferred Bundelkhand Ratan Samman</p>
+                                    <p class="card-text fs-6 fw-semibold my-4 ">During the 8th Khajuraho International
+                                        Film Festival, the...</p>
+                                    <a href="#"
+                                        class="btn btn-secondary fw-semibold col-12 text-uppercase rounded-0">read
+                                        more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="card border-0 rounded-0 shadow prducts-img-hover">
+                                <div class="">
+                                    <img src="img/news-2.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title fs-6 bg-primary fw-bold text-uppercase"><span
+                                            class="bg-primary text-white border border-1 py-1 px-3">16</span><span
+                                            class="bg-white text-primary py-1 px-3">apr</span></h5>
+                                    <p class="card-text footer-hover h4 text-center fw-bold my-4 ">bheeshma’ Organic
+                                        Farmer Bahadur Singh Bajwal Re-elected to Fairtrade NAPP Board</p>
+                                    <p class="card-text fs-6 fw-semibold my-4 ">bheeshma’ organic farmer from the
+                                        Himalayan...</p>
+                                    <a href="#"
+                                        class="btn btn-secondary fw-semibold col-12 text-uppercase rounded-0">read
+                                        more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 mt-4">
+                            <div class="card border-0 rounded-0 shadow prducts-img-hover">
+                                <img src="img/news-4.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title bg-primary text-primary fs-6 fw-bold text-uppercase"><span
+                                            class=" bg-white border border-1 py-1 px-3">13</span><span
+                                            class="bg-primary text-white py-1 px-3">nov</span></h5>
+                                    <p class="card-text h3 footer-hover text-center fw-bold my-4 ">Bheeshma Cricket
+                                        Premier League – 2022</p>
+                                    <p class="card-text h6 fw-semibold my-4 ">We successfully completed our First
+                                        Edition of Nature...</p>
+                                    <a href="#"
+                                        class="btn btn-secondary col-12 fw-semibold text-uppercase rounded-0">read
+                                        more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 p-2">
+                    <div class="Search p-4 border border-1 border-muted my-5">
+                        <h5 class="fw-bold text-capitalize"><span class=" text-primary fw-bold h4 pe-3"><i
+                                    class="bi bi-signpost"></i></span>Search Objects</h5>
+                        <form action="">
+                            <div class="input-group mt-5">
+                                <input type="email" class="py-3 bg-skin rounded-0 fw-bold form-control"
+                                    placeholder="Search your keyword...">
+                                <button type="button" class=" btn btn-primary rounded-0 fw-bold"><i
+                                        class="bi bi-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="Categories p-4 border border-1 border-muted">
+                        <h5 class="fw-bold"><span class=" text-primary fw-bold h4 pe-3"><i
+                                    class="bi bi-signpost"></i></span>Categories</h5>
+                        <ol class="list-unstyled">
+                            <li><a href="#"
+                                    class="fw-semibold text-decoration-none fs-6 text-capitalize footer-hover d-flex justify-content-between">
+                                    <p>Business</p><span class="p-2 bg-skin ">26</span>
+                                </a></li>
+                            <li><a href="#"
+                                    class="fw-semibold text-decoration-none fs-6 text-capitalize footer-hover d-flex justify-content-between">
+                                    <p>Consultant</p><span class="p-2 bg-skin ">30</span>
+                                </a></li>
+                            <li><a href="#"
+                                    class="fw-semibold text-decoration-none fs-6 text-capitalize footer-hover d-flex justify-content-between">
+                                    <p>Creative</p><span class="p-2 bg-skin ">71</span>
+                                </a></li>
+                        </ol>
+                    </div>
+                    <div class="Recent-Posts p-4 border border-1 border-muted my-5">
+                        <h5 class="fw-bold"><span class=" text-primary fw-bold h4 pe-3"><i
+                                    class="bi bi-signpost"></i></span>Recent Posts</h5>
+                        <div class="border-bottom border-double"></div>
+                        <p class="py-3 fw-semibold footer-hover"><i class="bi bi-stickies-fill p-2 text-primary"></i>The
+                            Front Page of Indian Organic Food Ingredients</p>
+                        <div class="border-bottom"></div>
+                        <p class="py-3 fw-semibold footer-hover"><i
+                                class="bi bi-stickies-fill p-2 text-primary"></i>Nature Bio Foods’ Organic Farmer
+                            Bahadur Singh Bajwal Re-elected to Fairtrade NAPP Board</p>
+                        <div class="border-bottom"></div>
+                        <p class="py-3 fw-semibold footer-hover"><i class="bi bi-stickies-fill p-2 text-primary"></i>The
+                            Organic Times</p>
+                        <div class="border-bottom"></div>
+                        <p class="py-3 fw-semibold footer-hover"><i
+                                class="bi bi-stickies-fill p-2 text-primary"></i>Nature Bio Foods’ CSR arm LT Foundation
+                            conferred Bundelkhand Ratan Samman</p>
+                        <div class="border-bottom"></div>
+                        <p class="py-3 fw-semibold footer-hover"><i class="bi bi-stickies-fill p-2 text-primary"></i>
+                            NBF Cricket Premier League – 2022</p>
+                    </div>
+                    <div class="Tags p-4 border border-1 border-muted">
+                        <h5 class="fw-bold text-capitalize"><span class=" text-primary fw-bold h4 pe-3"><i
+                                    class="bi bi-signpost"></i></span>Popular Tags</h5>
+                        <form action="">
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">Popular</button>
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">desgin</button>
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">ux</button>
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">usability</button>
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">develop</button>
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">icon</button>
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">Car</button>
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">Service</button>
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">Repairs</button>
+                            <button type="button" class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">Auto
+                                Parts</button>
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">Oil</button>
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">Dealer</button>
+                            <button type="button" class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">Oil
+                                Change</button>
+                            <button type="button" class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">Body
+                                Color</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- pagination  -->
+                <div class="col-5 mx-auto">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item rounded-0 mx-2 fw-bold border-muted">
+                                <a class="page-link fs-5" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item mx-2 px-1 py-1 fw-bold border-muted"><a class="page-link"
+                                    href="#">1</a></li>
+                            <li class="page-item mx-2 px-1 py-1 fw-bold border-muted"><a class="page-link"
+                                    href="#">2</a></li>
+                            <li class="page-item mx-2 px-1 py-1 fw-bold border-muted"><a class="page-link"
+                                    href="#">3</a></li>
+                            <li class="page-item mx-2 fw-bold border-muted">
+                                <a class="page-link fs-5" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our Services section  -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 p-3">
+                    <div class="row align-items-center shadow">
+                        <div class="col-2">
+                            <img src="img/sevice-i1.png" alt="">
+                        </div>
+                        <div class="col-10">
+                            <h4 class="fw-bold">Curated Products</h4>
+                            <p class="text-muted fw-semibold">Provide Curated Products for all product over $100</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 p-3">
+                    <div class="row align-items-center shadow">
+                        <div class="col-2">
+                            <img src="img/sevice-i2.png" alt="">
+                        </div>
+                        <div class="col-10">
+                            <h4 class="fw-bold">Curated Products</h4>
+                            <p class="text-muted fw-semibold">Provide Curated Products for all product over $159</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 p-3">
+                    <div class="row align-items-center shadow">
+                        <div class="col-2">
+                            <img src="img/sevice-i3.png" alt="">
+                        </div>
+                        <div class="col-10">
+                            <h4 class="fw-bold">Natural Food</h4>
+                            <p class="text-muted fw-semibold">Return product within 3 days for any product you buy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 p-3">
+                    <div class="row align-items-center shadow">
+                        <div class="col-2">
+                            <img src="img/sevice-i4.png" alt="">
+                        </div>
+                        <div class="col-10">
+                            <h4 class="fw-bold">Free home delivery</h4>
+                            <p class="text-muted fw-semibold">We ensure the product quality that you can trust easily
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer  -->
+    <footer class="padding-80 bg-skin">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="company-details">
+                        <a class="fw-bold fs-4 my-3 text-dark text-decoration-none" href="#"><img src="img/icon.png"
+                                alt="" class="col-2 p-1">Bheeshma</a>
+                        <p class="ps-1">Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is
+                            dummy text of the printing.</p>
+                        <a href="#" class="text-decoration-none text-dark py-2 footer-hover footer-hover"><i
+                                class="bi bi-geo-alt pe-2 fs-4"></i>Brooklyn, New York, United States</a>
+                        <a href="#" class="text-decoration-none text-dark py-2 footer-hover"><i
+                                class="bi bi-telephone pe-2 fs-4"></i>+0123-456789</a>
+                        <a href="#" class="text-decoration-none text-dark d-block py-2 footer-hover"><i
+                                class="bi bi-envelope pe-2 fs-4"></i>example@example.com</a>
+                        <i class="bi bi-facebook fs-4 pe-3 footer-hover"></i>
+                        <i class="bi bi-twitter fs-4 pe-3 footer-hover"></i>
+                        <i class="bi bi-linkedin fs-4 pe-3 footer-hover"></i>
+                        <i class="bi bi-youtube fs-4 pe-3 footer-hover"></i>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="Certifications">
+                        <h4 class="fw-bold">Certifications</h4>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="col-7 mx-auto my-3">
+                                    <img src="img/FSSAI.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="col-7 mx-auto my-3">
+                                    <img src="img/ecocert.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="col-7 mx-auto my-3">
+                                    <img src="img/India_organic.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="col-7 mx-auto my-3">
+                                    <img src="img/usda.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-1 p-0">
+                    <h4 class="fw-bold">Services.</h4>
+                    <ol class="list-unstyled ps-2">
+                        <li><a href="#" class="text-decoration-none footer-hover fs-6 text-muted">Order tracking</a>
+                        </li>
+                        <li><a href="#" class="text-decoration-none footer-hover fs-6 text-muted">Wish List</a></li>
+                        <li><a href="#" class="text-decoration-none footer-hover fs-6 text-muted">Login</a></li>
+                        <li><a href="#" class="text-decoration-none footer-hover fs-6 text-muted">My account</a></li>
+                        <li><a href="#" class="text-decoration-none footer-hover fs-6 text-muted">Terms & Conditions</a>
+                        </li>
+                        <li><a href="#" class="text-decoration-none footer-hover fs-6 text-muted">Promotional Offers</a>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
+                    <h4 class="fw-bold">Customer Care</h4>
+                    <ol class="list-unstyled ps-3">
+                        <li><a href="#" class="text-decoration-none footer-hover fs-6 text-muted">Login</a></li>
+                        <li><a href="#" class="text-decoration-none footer-hover fs-6 text-muted">My account</a></li>
+                        <li><a href="#" class="text-decoration-none footer-hover fs-6 text-muted">Wish List</a></li>
+                        <li><a href="#" class="text-decoration-none footer-hover fs-6 text-muted">Order tracking</a>
+                        </li>
+                        <li><a href="#" class="text-decoration-none footer-hover fs-6 text-muted">FAQ</a></li>
+                        <li><a href="#" class="text-decoration-none footer-hover fs-6 text-muted">Contact Us</a></li>
+                    </ol>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a class="fw-bold fs-5 my-3 text-dark text-decoration-none" href="#">Newsletter</a>
+                    <p class="py-4">Subscribe to our weekly Newsletter and receive updates via email.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control py-3 " placeholder="*Email">
+                        <button class="input-group-text bg-primary" id="basic-addon2"><i
+                                class="bi bi-caret-right-fill text-white fs-4"></i></span>
+                    </div>
+                    <img src="img/payment-4 (1).png" alt="" class="py-5">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- refres btn  -->
+    <a href="#" class="refres btn btn-outline-primary"><i class="bi-caret-up-fill fs-4"></i></i></a>
+    <!-- offcanvas  -->
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" id="launch-offcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="alert alert-light" role="alert">
+                <div class="cart-card shadow my-4">
+                    <div class="row align-items-center">
+                        <div class="col-3 position-relative ">
+                            <div class="prodcutes-img">
+                                <img src="img/p-3.png" alt="">
+                            </div>
+                            <span
+                                class="position-absolute top-0 end-50 translate-middle badge rounded-pill bg-danger"><i
+                                    class="bi bi-x-lg"></i></span>
+                        </div>
+                        <div class="col-6">
+                            <div class="prodcutes-content">
+                                <h6>PASSION</h6>
+                                <p class="text-muted">1 x $183.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-card shadow my-4">
+                    <div class="row align-items-center">
+                        <div class="col-3 position-relative">
+                            <div class="prodcutes-img">
+                                <img src="img/p-2.png" alt="" class="poition-relative">
+                            </div>
+                            <span
+                                class="position-absolute top-0 end-50 translate-middle badge rounded-pill bg-danger"><i
+                                    class="bi bi-x-lg"></i></span>
+                        </div>
+                        <div class="col-6">
+                            <div class="prodcutes-content">
+                                <h6>Papaya</h6>
+                                <p class="text-muted">1 x $92.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-card shadow my-4">
+                    <div class="row align-items-center">
+                        <div class="col-3 position-relative">
+                            <div class="prodcutes-img">
+                                <img src="img/p-17.png" alt="" class="poition-relative">
+                            </div>
+                            <span
+                                class="position-absolute top-0 end-50 translate-middle badge rounded-pill bg-danger"><i
+                                    class="bi bi-x-lg"></i></span>
+                        </div>
+                        <div class="col-6">
+                            <div class="prodcutes-content">
+                                <h6>Strawberry</h6>
+                                <p class="text-muted">1 x $75.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="cart-bills">
+                        <div
+                            class="d-flex justify-content-between border-top border-bottom border-2 border-opacity-10 py-3">
+                            <h6 class="text-uppercase">total:</h6>
+                            <h6 class="text-primary">$232.00</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-6">
+                        <a class="btn btn-outline-primary text-uppercase rounded-0 col-12 fw-semibold"
+                            href="shop.html">view
+                            cart</a>
+                    </div>
+                    <div class="col-6">
+                        <button
+                            class="btn btn-outline-primary text-uppercase rounded-0 col-12 fw-semibold">checkout</button>
+                    </div>
+                </div>
+                <p class="text-muted">Free Shipping on All Orders Over $100!</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.7.0.js"></script>
+    <script src="js/swiper-element-bundle.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 500) {
+                $("header").addClass("fixed")
+                $(".refres").removeClass("back-to-top-fixed")
+            }
+            else {
+                $("header").removeClass("fixed")
+                $(".refres").addClass("back-to-top-fixed")
+            }
+        })
+    </script>
+    <script>
+
+            (() => {
+                'use strict'
+                document.querySelectorAll('[data-bs-toggle="tooltip"]')
+                    .forEach(tooltip => {
+                        new bootstrap.Tooltip(tooltip)
+                    })
+                document.querySelectorAll('[data-bs-toggle="popover"]')
+                    .forEach(popover => {
+                        new bootstrap.Popover(popover)
+                    })
+
+                const toastPlacement = document.getElementById('toastPlacement')
+                if (toastPlacement) {
+                    document.getElementById('selectToastPlacement').addEventListener('change', function () {
+                        if (!toastPlacement.dataset.originalClass) {
+                            toastPlacement.dataset.originalClass = toastPlacement.className
+                        }
+
+                        toastPlacement.className = `${toastPlacement.dataset.originalClass} ${this.value}`
+                    })
+                }
+                document.querySelectorAll('.bd-example .toast')
+                    .forEach(toastNode => {
+                        const toast = new bootstrap.Toast(toastNode, {
+                            autohide: false
+                        })
+
+                        toast.show()
+                    })
+                const toastTrigger = document.getElementById('liveToastBtn')
+                const toastLiveExample = document.getElementById('liveToast')
+                if (toastTrigger) {
+                    toastTrigger.addEventListener('click', () => {
+                        const toast = new bootstrap.Toast(toastLiveExample)
+
+                        toast.show()
+                    })
+                }
+                const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+                const alertTrigger = document.getElementById('liveAlertBtn')
+
+                const appendAlert = (message, type) => {
+                    const wrapper = document.createElement('div')
+                    wrapper.innerHTML = [
+                        `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                        `   <div>${message}</div>`,
+                        '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                        '</div>'
+                    ].join('')
+
+                    alertPlaceholder.append(wrapper)
+                }
+
+                if (alertTrigger) {
+                    alertTrigger.addEventListener('click', () => {
+                        appendAlert('could not find this function', 'success')
+                    })
+                }
+                document.querySelectorAll('.bd-example-indeterminate [type="checkbox"]')
+                    .forEach(checkbox => {
+                        if (checkbox.id.includes('Indeterminate')) {
+                            checkbox.indeterminate = true
+                        }
+                    })
+                document.querySelectorAll('.bd-content [href="#"]')
+                    .forEach(link => {
+                        link.addEventListener('click', event => {
+                            event.preventDefault()
+                        })
+                    })
+                const exampleModal = document.getElementById('exampleModal')
+                if (exampleModal) {
+                    exampleModal.addEventListener('show.bs.modal', event => {
+                        // Button that triggered the modal
+                        const button = event.relatedTarget
+                        // Extract info from data-bs-* attributes
+                        const recipient = button.getAttribute('data-bs-whatever')
+
+                        // Update the modal's content.
+                        const modalTitle = exampleModal.querySelector('.modal-title')
+                        const modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+                        modalTitle.textContent = `New message to ${recipient}`
+                        modalBodyInput.value = recipient
+                    })
+                }
+                const myOffcanvas = document.querySelectorAll('.bd-example-offcanvas .offcanvas')
+                if (myOffcanvas) {
+                    myOffcanvas.forEach(offcanvas => {
+                        offcanvas.addEventListener('show.bs.offcanvas', event => {
+                            event.preventDefault()
+                        }, false)
+                    })
+                }
+            })()
+
+    </script>
+</body>
+
+</html>

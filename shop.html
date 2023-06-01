@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bheeshma organics-shop</title>
+    <style>
+        @import url(css/bootstrap-icons.min.css);
+        @import url(css/bootstrap-slider.min.css);
+        @import url(css/swiper-bundle.min.css);
+        @import url(css/bootstrap.min.css);
+        @import url(css/fonts.css.css);
+        @import url(css/style.css);
+    </style>
+</head>
+
+<body>
+    <!-- header  -->
+    <header class="navbar navbar-expand-lg hedaer-bg">
+        <div class="container">
+            <a class="navbar-brand text-primary fw-bold fs-4 my-3" href="#"><img src="img/icon.png" alt=""
+                    class="col-3 p-1"><span class="text-white">Bheeshma</span></a>
+            <button class="navbar-toggler border-0 shadow-none" data-bs-toggle="collapse" data-bs-target="#dropdown">
+                <i class="bi bi-list text-white fs-3 navbar-toggler-icon"></i>
+            </button>
+            <nav class="collapse navbar-collapse" id="dropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item fw-semibold pe-2 h6"><a href="index.html"
+                            class="nav-link text-white text-uppercase">home+</a>
+                    </li>
+                    <li class="nav-item fw-semibold pe-2 h6"><a href="about.html"
+                            class="nav-link text-white text-uppercase">about+</a>
+                    </li>
+                    <li class="nav-item fw-semibold pe-2 h6"><a href="shop.html"
+                            class="nav-link text-primary text-uppercase">shop+</a>
+                    </li>
+                    <li class="nav-item fw-semibold pe-2 h6"><a href="news.html"
+                            class="nav-link text-white text-uppercase">news+</a>
+                    </li>
+                    <li class="nav-item fw-semibold pe-2 h6"><a href="history.html"
+                            class="nav-link text-white text-uppercase">history+</a>
+                    </li>
+                    <li class="nav-item fw-semibold pe-2 h6"><a href="contact.html"
+                            class="nav-link text-white text-uppercase">contact+</a>
+                    </li>
+                </ul>
+                <button class="btn btn-primary rounded-0 py-3 px-3 text-uppercase fw-semibold">get a
+                    quote</button>
+            </nav>
+            <div class="row">
+                <button class="btn btn-success btn-56 rounded-0 py-3 px-3" data-bs-toggle="collapse"
+                    data-bs-target="#search"><i class="bi bi-search  fw-bold"></i></button>
+                <button class="btn btn-success btn-56 rounded-0 py-2 px-2" id="liveAlertBtn"><i
+                        class="bi bi-person p-1 fs-4 fw-bold"></i></button>
+                <button class="btn btn-success btn-56 rounded-0 py-2 px-2" data-bs-toggle="offcanvas"
+                    data-bs-target="#launch-offcanvas"><i class="bi bi-cart fs-4 fw-bold"></i></button>
+            </div>
+        </div>
+    </header>
+    <div class="not-fond">
+        <div class="collapse" id="search">
+            <div class="col-12 col-lg-3 ms-auto card card-body position-absolute serach-box">
+                <div class="input-group">
+                    <input type="text" class="form-control py-2 border-0" placeholder="Search....">
+                    <button class="input-group-text border-0 bg-transparent" id="basic-addon2"><i
+                            class="bi-search"></i></span>
+                </div>
+            </div>
+        </div>
+        <div id="liveAlertPlaceholder" class="position-absolute alret-position w-100"></div>
+    </div>
+    <!-- .banner section  -->
+    <section class="bg-banner padding-80 pt-0">
+        <div class="container">
+            <div class="p-3 rounded-5">
+                <div class="row align-items-center padding-80">
+                    <div class="col-12 col-lg-6">
+                        <div class="s-banner-content">
+                            <p class="text-primary fw-bold">// WELCOME TO OUR COMPANY</p>
+                            <p class="text-white display-1 fw-bold text-capitalize">shop now</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="s-banner-content text-start text-lg-end">
+                            <a href="index.html"
+                                class="text-light-c text-decoration-none px-4 text-uppercase fw-bold">home |</a>
+                            <a href="shop.html"
+                                class="text-primary text-decoration-none px-4 text-uppercase fw-bold">shop</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--cart section  -->
+    <section class="padding-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-9">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-12 col-lg-3">
+                            <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active fs-5 fw-bold text-uppercase rounded-0 px-2 border-0"
+                                        id="home-tab" data-bs-toggle="tab" data-bs-target="#food" type="buttonx"><i
+                                            class="bi bi-grid-fill fs-3"></i></button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link fs-5 fw-bold text-uppercase rounded-0 border-0"
+                                        id="profile-tab" data-bs-toggle="tab" data-bs-target="#vegetables"
+                                        type="button"><i class="bi bi-list-task fs-2"></i></button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <h5 class="fw-bold">Showing 1–12 of 18 results</h5>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="dropdown-center">
+                                <form action="">
+                                    <select
+                                        class=" btn bg-transparent  border py-2 px-3 rounded-0 border-1 border-opacity-50 fw-bold dropdown-toggle">
+                                        <option class="fw-semibold text-start">Default Sorting</option>
+                                        <option class="fw-semibold text-start">Sort by popularity</option>
+                                        <option class="fw-semibold text-start">Sort by new arrivals</option>
+                                        <option class="fw-semibold text-start">Sort by price: low to high</option>
+                                        <option class="fw-semibold text-start">Sort by price: high to low</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content mt-5" id="myTabContent">
+                        <div class="tab-pane fade show active " id="food" role="tabpanel" aria-labelledby="home-tab"
+                            tabindex="0">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card my-4">
+                                        <img src="img/p-1.png" class="card-img-top poition-relative" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary text-center fs-6"><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-half"></i><span class="text-muted">(23)</span>
+                                            </h5>
+                                            <p class="card-text text-uppercase fs-6 text-center fw-bold">orange</p>
+                                            <p
+                                                class="card-text text-uppercase fs-5 text-center text-primary fw-bold pe-1">
+                                                $32.00 <span class="opacity-75 text-decoration-line-through">
+                                                    $42.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card my-4">
+                                        <img src="img/p-15.png" class="card-img-top poition-relative" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary text-center fs-6"><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-half"></i><span class="text-muted">(25)</span>
+                                            </h5>
+                                            <p class="card-text text-uppercase fs-6 text-center fw-bold">bananas</p>
+                                            <p
+                                                class="card-text text-uppercase fs-5 text-center text-primary fw-bold pe-1">
+                                                $75.00 <span class="opacity-75 text-decoration-line-through">
+                                                    $92.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card my-4">
+                                        <img src="img/p-16.png" class="card-img-top poition-relative" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary text-center fs-6"><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i
+                                                    class="bi bi-star"></i><span class="text-muted"></span></h5>
+                                            <p class="card-text text-uppercase fs-6 text-center fw-bold">PAPAYA</p>
+                                            <p
+                                                class="card-text text-uppercase fs-5 text-center text-primary fw-bold pe-1">
+                                                $78.00 <span class="opacity-75 text-decoration-line-through">
+                                                    $85.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card my-4">
+                                        <img src="img/p-17.png" class="card-img-top poition-relative" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary text-center fs-6"><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i
+                                                    class="bi bi-star"></i><span class="text-muted"></span></h5>
+                                            <p class="card-text text-uppercase fs-6 text-center fw-bold">
+                                                grapes</p>
+                                            <p
+                                                class="card-text text-uppercase fs-5 text-center text-primary fw-bold pe-1">
+                                                $150.00 <span class="opacity-75 text-decoration-line-through">
+                                                    $185.00</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card my-4">
+                                        <img src="img/p-7.png" class="card-img-top poition-relative" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary text-center fs-6"><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-half"></i><span class="text-muted">(25)</span>
+                                            </h5>
+                                            <p class="card-text text-uppercase fs-6 text-center fw-bold">pomegranate
+                                                kandhari
+                                            </p>
+                                            <p
+                                                class="card-text text-uppercase fs-5 text-center text-primary fw-bold pe-1">
+                                                $30.00 <span class="opacity-75 text-decoration-line-through">
+                                                    $45.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card my-4">
+                                        <img src="img/p-18.png" class="card-img-top poition-relative" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary text-center fs-6"><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i
+                                                    class="bi bi-star"></i><span class="text-muted"></span></h5>
+                                            <p class="card-text text-uppercase fs-6 text-center fw-bold">mangosa</p>
+                                            <p
+                                                class="card-text text-uppercase fs-5 text-center text-primary fw-bold pe-1">
+                                                $138.00 <span class="opacity-75 text-decoration-line-through">
+                                                    $185.00</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card my-4">
+                                        <img src="img/p-19.png" class="card-img-top poition-relative" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary text-center fs-6"><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i
+                                                    class="bi bi-star"></i><span class="text-muted"></span></h5>
+                                            <p class="card-text text-uppercase fs-6 text-center fw-bold">Guavas</p>
+                                            <p
+                                                class="card-text text-uppercase fs-5 text-center text-primary fw-bold pe-1">
+                                                $85.00 <span class="opacity-75 text-decoration-line-through">
+                                                    $98.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card my-4">
+                                        <img src="img/p-10.png" class="card-img-top poition-relative" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary text-center fs-6"><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><span class="text-muted">(25)</span>
+                                            </h5>
+                                            <p class="card-text text-uppercase fs-6 text-center fw-bold">Musk Melon</p>
+                                            <p
+                                                class="card-text text-uppercase fs-5 text-center text-primary fw-bold pe-1">
+                                                $130.00 <span class="opacity-75 text-decoration-line-through">
+                                                    $150.00</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card my-4">
+                                        <img src="img/p-2.png" class="card-img-top poition-relative" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary text-center fs-6"><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star"></i><i
+                                                    class="bi bi-star"></i><span class="text-muted"></span></h5>
+                                            <p class="card-text text-uppercase fs-6 text-center fw-bold">cauliflower</p>
+                                            <p
+                                                class="card-text text-uppercase fs-5 text-center text-primary fw-bold pe-1">
+                                                $45.00 <span class="opacity-75 text-decoration-line-through">
+                                                    $58.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card my-4">
+                                        <img src="img/p-4.png" class="card-img-top poition-relative" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary text-center fs-6"><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star"></i><i
+                                                    class="bi bi-star"></i><span class="text-muted"></span></h5>
+                                            <p class="card-text text-uppercase fs-6 text-center fw-bold">sweet corn</p>
+                                            <p
+                                                class="card-text text-uppercase fs-5 text-center text-primary fw-bold pe-1">
+                                                $43.00 <span class="opacity-75 text-decoration-line-through">
+                                                    $52.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card my-4">
+                                        <img src="img/p-5.png" class="card-img-top poition-relative" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary text-center fs-6"><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star"></i><span class="text-muted"></span></h5>
+                                            <p class="card-text text-uppercase fs-6 text-center fw-bold">cabbage</p>
+                                            <p
+                                                class="card-text text-uppercase fs-5 text-center text-primary fw-bold pe-1">
+                                                $36.00 <span class="opacity-75 text-decoration-line-through">
+                                                    $48.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card my-4">
+                                        <img src="img/p-9.png" class="card-img-top poition-relative" alt="...">
+                                        <span
+                                            class="position-absolute top-0 start-100 translate-middle badge fs-6 rounded-pill p-2 bg-primary">%13</span>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary text-center fs-6"><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star"></i><span class="text-muted"></span></h5>
+                                            <p class="card-text text-uppercase fs-6 text-center fw-bold">tomatto</p>
+                                            <p
+                                                class="card-text text-uppercase fs-5 text-center text-primary fw-bold pe-1">
+                                                $62.00 <span class="opacity-75 text-decoration-line-through">
+                                                    $78.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card my-4">
+                                        <img src="img/p-3.png" class="card-img-top poition-relative" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary text-center fs-6"><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><span class="text-muted">(25)</span>
+                                            </h5>
+                                            <p class="card-text text-uppercase fs-6 text-center fw-bold">pista</p>
+                                            <p
+                                                class="card-text text-uppercase fs-5 text-center text-primary fw-bold pe-1">
+                                                $183.00 <span class="opacity-75 text-decoration-line-through">
+                                                    $188.00</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card my-4">
+                                        <img src="img/p-6.png" class="card-img-top poition-relative" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary text-center fs-6"><i
+                                                    class="bi bi-star"></i><i class="bi bi-star"></i><i
+                                                    class="bi bi-star"></i><i class="bi bi-star"></i><i
+                                                    class="bi bi-star"></i><span class="text-muted"></span></h5>
+                                            <p class="card-text text-uppercase fs-6 text-center text-danger fw-bold">out
+                                                off
+                                                stock</p>
+                                            <p
+                                                class="card-text text-uppercase fs-5 text-center text-primary fw-bold pe-1">
+                                                $00.00 <span class="opacity-75 text-decoration-line-through">
+                                                    $00.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card my-4">
+                                        <img src="img/p-11.png" class="card-img-top poition-relative" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary text-center fs-6"><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star"></i><span class="text-muted"></span></h5>
+                                            <p class="card-text text-uppercase fs-6 text-center fw-bold">almonds
+                                            </p>
+                                            <p
+                                                class="card-text text-uppercase fs-5 text-center text-primary fw-bold pe-1">
+                                                $178.00 <span class="opacity-75 text-decoration-line-through">
+                                                    $189.00</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card my-4">
+                                        <img src="img/p-13.png" class="card-img-top poition-relative" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary text-center fs-6"><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><span class="text-muted"></span></h5>
+                                            <p class="card-text text-uppercase fs-6 text-center fw-bold">cashew-jumbo
+                                            </p>
+                                            <p
+                                                class="card-text text-uppercase fs-5 text-center text-primary fw-bold pe-1">
+                                                $199.00 <span class="opacity-75 text-decoration-line-through">
+                                                    $208.00</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card my-4">
+                                        <img src="img/p-20.jpg" class="card-img-top poition-relative" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary text-center fs-6"><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><span class="text-muted">(25)</span>
+                                            </h5>
+                                            <p class="card-text text-uppercase fs-6 text-center fw-bold">medjool da</p>
+                                            <p
+                                                class="card-text text-uppercase fs-5 text-center text-primary fw-bold pe-1">
+                                                $189.00 <span class="opacity-75 text-decoration-line-through">
+                                                    $192.00</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="vegetables" role="tabpanel" aria-labelledby="profile-tab"
+                            tabindex="0">
+                            <div class="col-12">
+                                <div class="card shadow-line my-4">
+                                    <div class="row align-items-center">
+                                        <div class="col-4">
+                                            <img src="img/p-1.png" class="card-img-top poition-relative" alt="...">
+                                        </div>
+                                        <div class=" col-6 card-body p-3">
+                                            <p class="card-text text-uppercase footer-hover fs-2 fw-bold">orange</p>
+                                            <h5 class="card-title fs-6"><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star-half text-warning footer-hover"></i><span
+                                                    class="text-muted">(23)</span>
+                                            </h5>
+                                            <p class="card-text text-uppercase fs-3 text-primary fw-bold pe-1">
+                                                $32.00 <span class="opacity-75 text-decoration-line-through">
+                                                    $42.00</span></p>
+                                            <p class="text-muted fs-4">Lorem ipsum dolor sit amet, consectetur
+                                                adipisicing elit. Recusandae asperiores sit odit nesciunt, aliquid,
+                                                deleniti non et ut dolorem!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card shadow-line my-4">
+                                    <div class="row align-items-center">
+                                        <div class="col-4">
+                                            <img src="img/p-2.png" class="card-img-top poition-relative" alt="...">
+                                        </div>
+                                        <div class=" col-6 card-body p-3">
+                                            <p class="card-text text-uppercase footer-hover fs-2 fw-bold">CAULIFLOWER
+                                            </p>
+                                            <h5 class="card-title fs-6"><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star text-warning footer-hover"></i><i
+                                                    class="bi bi-star text-warning footer-hover"></i>
+                                            </h5>
+                                            <p class="card-text text-uppercase fs-3 text-primary fw-bold pe-1">
+                                                $45.00 <span class="opacity-75 text-decoration-line-through">
+                                                    $58.00</span></p>
+                                            <p class="text-muted fs-4">Lorem ipsum dolor sit amet, consectetur
+                                                adipisicing elit. Recusandae asperiores sit odit nesciunt, aliquid,
+                                                deleniti non et ut dolorem!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card shadow-line my-4">
+                                    <div class="row align-items-center">
+                                        <div class="col-4">
+                                            <img src="img/p-3.png" class="card-img-top poition-relative" alt="...">
+                                        </div>
+                                        <div class=" col-6 card-body p-3">
+                                            <p class="card-text text-uppercase footer-hover fs-2 fw-bold">PISTA</p>
+                                            <h5 class="card-title fs-6"><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><span
+                                                    class="text-muted">(25)</span>
+                                            </h5>
+                                            <p class="card-text text-uppercase fs-3 text-primary fw-bold pe-1">
+                                                $183.00 <span class="opacity-75 text-decoration-line-through">
+                                                    $188.00</span></p>
+                                            <p class="text-muted fs-4">Lorem ipsum dolor sit amet, consectetur
+                                                adipisicing elit. Recusandae asperiores sit odit nesciunt, aliquid,
+                                                deleniti non et ut dolorem!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card shadow-line my-4">
+                                    <div class="row align-items-center">
+                                        <div class="col-4">
+                                            <img src="img/p-4.png" class="card-img-top poition-relative" alt="...">
+                                        </div>
+                                        <div class=" col-6 card-body p-3">
+                                            <p class="card-text text-uppercase footer-hover fs-2 fw-bold">SWEET CORN</p>
+                                            <h5 class="card-title fs-6"><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star text-warning footer-hover"></i><i
+                                                    class="bi bi-star text-warning footer-hover"></i><span
+                                                    class="text-muted">(23)</span>
+                                            </h5>
+                                            <p class="card-text text-uppercase fs-3 text-primary fw-bold pe-1">
+                                                $43.00 <span class="opacity-75 text-decoration-line-through">
+                                                    $52.00</span></p>
+                                            <p class="text-muted fs-4">Lorem ipsum dolor sit amet, consectetur
+                                                adipisicing elit. Recusandae asperiores sit odit nesciunt, aliquid,
+                                                deleniti non et ut dolorem!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card shadow-line my-4">
+                                    <div class="row align-items-center">
+                                        <div class="col-4">
+                                            <img src="img/p-5.png" class="card-img-top poition-relative" alt="...">
+                                        </div>
+                                        <div class=" col-6 card-body p-3">
+                                            <p class="card-text text-uppercase footer-hover fs-2 fw-bold">CABBAGE</p>
+                                            <h5 class="card-title fs-6"><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star text-warning footer-hover"></i><span
+                                                    class="text-muted">(23)</span>
+                                            </h5>
+                                            <p class="card-text text-uppercase fs-3 text-primary fw-bold pe-1">
+                                                $36.00 <span class="opacity-75 text-decoration-line-through">
+                                                    $48.00</span></p>
+                                            <p class="text-muted fs-4">Lorem ipsum dolor sit amet, consectetur
+                                                adipisicing elit. Recusandae asperiores sit odit nesciunt, aliquid,
+                                                deleniti non et ut dolorem!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card shadow-line my-4">
+                                    <div class="row align-items-center">
+                                        <div class="col-4">
+                                            <img src="img/p-7.png" class="card-img-top poition-relative" alt="...">
+                                        </div>
+                                        <div class=" col-6 card-body p-3">
+                                            <p class="card-text text-uppercase footer-hover fs-2 fw-bold">POMEGRANATE
+                                                KANDHARI</p>
+                                            <h5 class="card-title fs-6"><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star-half text-warning footer-hover"></i><span
+                                                    class="text-muted">(23)</span>
+                                            </h5>
+                                            <p class="card-text text-uppercase fs-3 text-primary fw-bold pe-1">
+                                                $30.00 <span class="opacity-75 text-decoration-line-through">
+                                                    $45.00</span></p>
+                                            <p class="text-muted fs-4">Lorem ipsum dolor sit amet, consectetur
+                                                adipisicing elit. Recusandae asperiores sit odit nesciunt, aliquid,
+                                                deleniti non et ut dolorem!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card shadow-line my-4">
+                                    <div class="row align-items-center">
+                                        <div class="col-4">
+                                            <img src="img/p-20.jpg" class="card-img-top poition-relative" alt="...">
+                                        </div>
+                                        <div class=" col-6 card-body p-3">
+                                            <p class="card-text text-uppercase footer-hover fs-2 fw-bold">MEDJOOL DA</p>
+                                            <h5 class="card-title fs-6"><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star-fill text-warning footer-hover"></i><i
+                                                    class="bi bi-star-half text-warning footer-hover"></i><span
+                                                    class="text-muted">(23)</span>
+                                            </h5>
+                                            <p class="card-text text-uppercase fs-3 text-primary fw-bold pe-1">
+                                                $189.00 <span class="opacity-75 text-decoration-line-through">
+                                                    $192.00</span></p>
+                                            <p class="text-muted fs-4">Lorem ipsum dolor sit amet, consectetur
+                                                adipisicing elit. Recusandae asperiores sit odit nesciunt, aliquid,
+                                                deleniti non et ut dolorem!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 p-2">
+                    <div class="Product-Categories p-4 border border-1 border-muted">
+                        <h5 class="fw-bold"><span class=" text-primary fw-bold h4 pe-3"><i
+                                    class="bi bi-signpost"></i></span>Product Categories</h5>
+                        <ol class="list-unstyled">
+                            <li><a href="#"
+                                    class="fw-semibold text-decoration-none fs-6 text-capitalize footer-hover d-flex justify-content-between">
+                                    <p>body</p><i class="bi bi-caret-right-fill"></i>
+                                </a></li>
+                            <li><a href="#"
+                                    class="fw-semibold text-decoration-none fs-6 text-capitalize footer-hover d-flex justify-content-between">
+                                    <p>interior</p><i class="bi bi-caret-right-fill"></i>
+                                </a></li>
+                            <li><a href="#"
+                                    class="fw-semibold text-decoration-none fs-6 text-capitalize footer-hover d-flex justify-content-between">
+                                    <p>lights</p><i class="bi bi-caret-right-fill"></i>
+                                </a></li>
+                            <li><a href="#"
+                                    class="fw-semibold text-decoration-none fs-6 text-capitalize footer-hover d-flex justify-content-between">
+                                    <p>parts</p><i class="bi bi-caret-right-fill"></i>
+                                </a></li>
+                            <li><a href="#"
+                                    class="fw-semibold text-decoration-none fs-6 text-capitalize footer-hover d-flex justify-content-between">
+                                    <p>tires</p><i class="bi bi-caret-right-fill"></i>
+                                </a></li>
+                            <li><a href="#"
+                                    class="fw-semibold text-decoration-none fs-6 text-capitalize footer-hover d-flex justify-content-between">
+                                    <p>uncategorized</p><i class="bi bi-caret-right-fill"></i>
+                                </a></li>
+                            <li><a href="#"
+                                    class="fw-semibold text-decoration-none fs-6 text-capitalize footer-hover d-flex justify-content-between">
+                                    <p>wheel</p><i class="bi bi-caret-right-fill"></i>
+                                </a></li>
+                        </ol>
+                    </div>
+                    <div class="range p-4 border border-1 border-muted my-5">
+                        <h5 class="fw-bold"><span class=" text-primary fw-bold h4 pe-3"><i
+                                    class="bi bi-signpost"></i></span>Filter By Price</h5>
+                        <p class="text-muted fw-semibold text-capitalize">your range:</p>
+                        <div class="slider-wrapper slider-gaia">
+                            <input class="input-range" id="priceRange" type="text" data-slider-step="1000"
+                                data-slider-value="4999, 9999" data-slider-min="4999" data-slider-max="20000"
+                                data-slider-range="true" data-slider-tooltip_split="true"
+                                data-slider-tooltip="always" />
+                        </div>
+                    </div>
+                    <div class="rated-Product p-4 border border-1 border-muted">
+                        <h5 class="fw-bold text-capitalize"><span class=" text-primary fw-bold h4 pe-3"><i
+                                    class="bi bi-signpost"></i></span>Top Rated Product</h5>
+                        <div class="row align-items-center border-bottom border-1">
+                            <div class="col-4 position-relative my-4">
+                                <img src="img/p-1.png" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h5 class="card-title fs-6 my-1 footer-hover"><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><span
+                                        class="text-muted"></span>
+                                </h5>
+                                <h6 class="fw-bold">ORANGE</h6>
+                                <p class="card-text text-uppercase fs-5 text-primary fw-bold"> $32.00 <span
+                                        class="opacity-75 text-decoration-line-through">$42.00</span></p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center border-bottom border-1">
+                            <div class="col-4 position-relative my-4">
+                                <img src="img/p-10.png" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h5 class="card-title fs-6 my-1 footer-hover"><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><span
+                                        class="text-muted"></span>
+                                </h5>
+                                <h6 class="fw-bold">KIWI</h6>
+                                <p class="card-text text-uppercase fs-5 text-primary fw-bold"> $130.00 <span
+                                        class="opacity-75 text-decoration-line-through">$150.00</span></p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center border-bottom border-1">
+                            <div class="col-4 position-relative my-4">
+                                <img src="img/p-3.png" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h5 class="card-title fs-6 my-1 footer-hover"><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><i
+                                        class="bi bi-star-fill text-warning px-1 footer-hover"></i><span
+                                        class="text-muted"></span>
+                                </h5>
+                                <h6 class="fw-bold">PASSION</h6>
+                                <p class="card-text text-uppercase fs-5 text-primary fw-bold"> $183.00 <span
+                                        class="opacity-75 text-decoration-line-through">$188.00</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Search p-4 border border-1 border-muted my-5">
+                        <h5 class="fw-bold text-capitalize"><span class=" text-primary fw-bold h4 pe-3"><i
+                                    class="bi bi-signpost"></i></span>Search Objects</h5>
+                        <form action="">
+                            <div class="input-group mt-5">
+                                <input type="email" class="py-3 bg-skin rounded-0 fw-bold form-control"
+                                    placeholder="Search your keyword...">
+                                <button type="button" class=" btn btn-primary rounded-0 fw-bold"><i
+                                        class="bi bi-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="Tags p-4 border border-1 border-muted my-5">
+                        <h5 class="fw-bold text-capitalize"><span class=" text-primary fw-bold h4 pe-3"><i
+                                    class="bi bi-signpost"></i></span>Popular Tags</h5>
+                        <form action="">
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">Popular</button>
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">desgin</button>
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">ux</button>
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">usability</button>
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">develop</button>
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">icon</button>
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">Car</button>
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">Service</button>
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">Repairs</button>
+                            <button type="button" class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">Auto
+                                Parts</button>
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">Oil</button>
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">Dealer</button>
+                            <button type="button" class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">Oil
+                                Change</button>
+                            <button type="button" class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold">Body
+                                Color</button>
+                        </form>
+                    </div>
+                    <div class="size  p-4 border border-1 border-muted">
+                        <h5 class="fw-bold text-capitalize"><span class=" text-primary fw-bold h4 pe-3"><i
+                                    class="bi bi-signpost"></i></span>Product Size</h5>
+                        <form action="">
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold px-3">s</button>
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold px-3">m</button>
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold px-3">l</button>
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold px-3">xl</button>
+                            <button type="button"
+                                class=" btn btn-danger m-1 text-uppercase rounded-0 fw-bold px-3">xxl</button>
+                        </form>
+                    </div>
+                    <div class="color  p-4 border border-1 border-muted my-5">
+                        <h5 class="fw-bold mb-3 text-capitalize"><span class=" text-primary fw-bold h4 pe-3"><i
+                                    class="bi bi-signpost"></i></span>Product Size</h5>
+                        <form action="">
+                            <button type="button"
+                                class=" btn bg-dark m-1 text-uppercase rounded-0 fw-bold px-4 py-3"></button>
+                            <button type="button"
+                                class=" btn btn-white border-2 border-dark m-1 text-uppercase rounded-0 fw-bold px-4 py-3"></button>
+                            <button type="button"
+                                class=" btn bg-danger m-1 text-uppercase rounded-0 fw-bold px-4 py-3"></button>
+                            <button type="button"
+                                class=" btn bg-dark opacity-75 m-1 text-uppercase rounded-0 fw-bold px-4 py-3"></button>
+                            <button type="button"
+                                class=" btn bg-dark opacity-50 m-1 text-uppercase rounded-0 fw-bold px-4 py-3"></button>
+                            <button type="button"
+                                class=" btn bg-danger opacity-75 m-1 text-uppercase rounded-0 fw-bold px-4 py-3"></button>
+                            <button type="button"
+                                class=" btn orange m-1 text-uppercase rounded-0 fw-bold px-4 py-3"></button>
+                            <button type="button"
+                                class=" btn yellow m-1 text-uppercase rounded-0 fw-bold px-4 py-3"></button>
+                            <button type="button"
+                                class=" btn green m-1 text-uppercase rounded-0 fw-bold px-4 py-3"></button>
+                            <button type="button"
+                                class=" btn cyan m-1 text-uppercase rounded-0 fw-bold px-4 py-3"></button>
+                            <button type="button"
+                                class=" btn pink m-1 text-uppercase rounded-0 fw-bold px-4 py-3"></button>
+                            <button type="button"
+                                class=" btn purple m-1 text-uppercase rounded-0 fw-bold px-4 py-3"></button>
+                            <button type="button"
+                                class=" btn blue m-1 text-uppercase rounded-0 fw-bold px-4 py-3"></button>
+                        </form>
+                    </div>
+                    <img src="img/produt-1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- pagination  -->
+        <div class="paginatiom">
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li class="page-item rounded-0 mx-2 fw-bold border-muted">
+                        <a class="page-link fs-5" href="#">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item mx-2 px-1 py-1 fw-bold border-muted"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item mx-2 px-1 py-1 fw-bold border-muted"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item mx-2 px-1 py-1 fw-bold border-muted"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item mx-2 fw-bold border-muted">
+                        <a class="page-link fs-5" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!-- our Services section  -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 p-3">
+                    <div class="row align-items-center shadow">
+                        <div class="col-2">
+                            <img src="img/sevice-i1.png" alt="">
+                        </div>
+                        <div class="col-10">
+                            <h4 class="fw-bold">Curated Products</h4>
+                            <p class="text-muted fw-semibold">Provide Curated Products for all product over $100</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 p-3">
+                    <div class="row align-items-center shadow">
+                        <div class="col-2">
+                            <img src="img/sevice-i2.png" alt="">
+                        </div>
+                        <div class="col-10">
+                            <h4 class="fw-bold">Curated Products</h4>
+                            <p class="text-muted fw-semibold">Provide Curated Products for all product over $159</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 p-3">
+                    <div class="row align-items-center shadow">
+                        <div class="col-2">
+                            <img src="img/sevice-i3.png" alt="">
+                        </div>
+                        <div class="col-10">
+                            <h4 class="fw-bold">Natural Food</h4>
+                            <p class="text-muted fw-semibold">Return product within 3 days for any product you buy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 p-3">
+                    <div class="row align-items-center shadow">
+                        <div class="col-2">
+                            <img src="img/sevice-i4.png" alt="">
+                        </div>
+                        <div class="col-10">
+                            <h4 class="fw-bold">Free home delivery</h4>
+                            <p class="text-muted fw-semibold">We ensure the product quality that you can trust easily
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer  -->
+    <footer class="padding-80 bg-skin">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="company-details">
+                        <a class="fw-bold fs-4 my-3 text-dark text-decoration-none" href="#"><img src="img/icon.png"
+                                alt="" class="col-2 p-1">Bheeshma</a>
+                        <p class="ps-1">Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is
+                            dummy text of the printing.</p>
+                        <a href="#" class="text-decoration-none text-dark py-2 footer-hover footer-hover"><i
+                                class="bi bi-geo-alt pe-2 fs-4"></i>Brooklyn, New York, United States</a>
+                        <a href="#" class="text-decoration-none text-dark py-2 footer-hover"><i
+                                class="bi bi-telephone pe-2 fs-4"></i>+0123-456789</a>
+                        <a href="#" class="text-decoration-none text-dark d-block py-2 footer-hover"><i
+                                class="bi bi-envelope pe-2 fs-4"></i>example@example.com</a>
+                        <i class="bi bi-facebook fs-4 pe-3 footer-hover"></i>
+                        <i class="bi bi-twitter fs-4 pe-3 footer-hover"></i>
+                        <i class="bi bi-linkedin fs-4 pe-3 footer-hover"></i>
+                        <i class="bi bi-youtube fs-4 pe-3 footer-hover"></i>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="Certifications">
+                        <h4 class="fw-bold">Certifications</h4>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="col-7 mx-auto my-3">
+                                    <img src="img/FSSAI.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="col-7 mx-auto my-3">
+                                    <img src="img/ecocert.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="col-7 mx-auto my-3">
+                                    <img src="img/India_organic.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="col-7 mx-auto my-3">
+                                    <img src="img/usda.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-1 p-0">
+                    <h4 class="fw-bold">Services.</h4>
+                    <ol class="list-unstyled ps-2">
+                        <li><a href="#" class="text-decoration-none footer-hover fs-6 text-muted">Order tracking</a>
+                        </li>
+                        <li><a href="#" class="text-decoration-none footer-hover fs-6 text-muted">Wish List</a></li>
+                        <li><a href="#" class="text-decoration-none footer-hover fs-6 text-muted">Login</a></li>
+                        <li><a href="#" class="text-decoration-none footer-hover fs-6 text-muted">My account</a></li>
+                        <li><a href="#" class="text-decoration-none footer-hover fs-6 text-muted">Terms & Conditions</a>
+                        </li>
+                        <li><a href="#" class="text-decoration-none footer-hover fs-6 text-muted">Promotional Offers</a>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
+                    <h4 class="fw-bold">Customer Care</h4>
+                    <ol class="list-unstyled ps-3">
+                        <li><a href="#" class="text-decoration-none footer-hover fs-6 text-muted">Login</a></li>
+                        <li><a href="#" class="text-decoration-none footer-hover fs-6 text-muted">My account</a></li>
+                        <li><a href="#" class="text-decoration-none footer-hover fs-6 text-muted">Wish List</a></li>
+                        <li><a href="#" class="text-decoration-none footer-hover fs-6 text-muted">Order tracking</a>
+                        </li>
+                        <li><a href="#" class="text-decoration-none footer-hover fs-6 text-muted">FAQ</a></li>
+                        <li><a href="#" class="text-decoration-none footer-hover fs-6 text-muted">Contact Us</a></li>
+                    </ol>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a class="fw-bold fs-5 my-3 text-dark text-decoration-none" href="#">Newsletter</a>
+                    <p class="py-4">Subscribe to our weekly Newsletter and receive updates via email.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control py-3 " placeholder="*Email">
+                        <button class="input-group-text bg-primary" id="basic-addon2"><i
+                                class="bi bi-caret-right-fill text-white fs-4"></i></span>
+                    </div>
+                    <img src="img/payment-4 (1).png" alt="" class="py-5">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- refres btn  -->
+    <!-- <a href="#" class="refres btn btn-outline-primary"><i class="bi-caret-up-fill fs-4"></i></i></a> -->
+    <!-- offcanvas  -->
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" id="launch-offcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="alert alert-light" role="alert">
+                <div class="cart-card shadow my-4">
+                    <div class="row align-items-center">
+                        <div class="col-3 position-relative ">
+                            <div class="prodcutes-img">
+                                <img src="img/p-3.png" alt="">
+                            </div>
+                            <span
+                                class="position-absolute top-0 end-50 translate-middle badge rounded-pill bg-danger"><i
+                                    class="bi bi-x-lg"></i></span>
+                        </div>
+                        <div class="col-6">
+                            <div class="prodcutes-content">
+                                <h6>PASSION</h6>
+                                <p class="text-muted">1 x $183.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-card shadow my-4">
+                    <div class="row align-items-center">
+                        <div class="col-3 position-relative">
+                            <div class="prodcutes-img">
+                                <img src="img/p-2.png" alt="" class="poition-relative">
+                            </div>
+                            <span
+                                class="position-absolute top-0 end-50 translate-middle badge rounded-pill bg-danger"><i
+                                    class="bi bi-x-lg"></i></span>
+                        </div>
+                        <div class="col-6">
+                            <div class="prodcutes-content">
+                                <h6>Papaya</h6>
+                                <p class="text-muted">1 x $92.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-card shadow my-4">
+                    <div class="row align-items-center">
+                        <div class="col-3 position-relative">
+                            <div class="prodcutes-img">
+                                <img src="img/p-17.png" alt="" class="poition-relative">
+                            </div>
+                            <span
+                                class="position-absolute top-0 end-50 translate-middle badge rounded-pill bg-danger"><i
+                                    class="bi bi-x-lg"></i></span>
+                        </div>
+                        <div class="col-6">
+                            <div class="prodcutes-content">
+                                <h6>Strawberry</h6>
+                                <p class="text-muted">1 x $75.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="cart-bills">
+                        <div
+                            class="d-flex justify-content-between border-top border-bottom border-2 border-opacity-10 py-3">
+                            <h6 class="text-uppercase">total:</h6>
+                            <h6 class="text-primary">$232.00</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-6">
+                        <a class="btn btn-outline-primary text-uppercase rounded-0 col-12 fw-semibold"
+                            href="shop.html">view
+                            cart</a>
+                    </div>
+                    <div class="col-6">
+                        <button
+                            class="btn btn-outline-primary text-uppercase rounded-0 col-12 fw-semibold">checkout</button>
+                    </div>
+                </div>
+                <p class="text-muted">Free Shipping on All Orders Over $100!</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.7.0.js"></script>
+    <script src="js/bootstrap-slider.min.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/swiper-element-bundle.min.js"></script>
+    <!-- filter  -->
+    <script>
+        (function ($) {
+            $(document).ready(function () {
+                $('#priceRange').each(function () {
+                    var slidervalue = $(this).attr('data-slider-value');
+                    var separator = slidervalue.indexOf(',');
+                    if (separator !== -1) {
+                        slidervalue = slidervalue.split(',');
+                        slidervalue.forEach(function (item, i, arr) {
+                            arr[i] = parseFloat(item);
+                        });
+                    } else {
+                        slidervalue = parseFloat(slidervalue);
+                    }
+
+
+                    $(this).slider({
+                        formatter: function (slidervalue) {
+                            return '$' + slidervalue;
+                        },
+                        min: parseFloat($(this).attr('data-slider-min')),
+                        max: parseFloat($(this).attr('data-slider-max')),
+                        range: $(this).attr('data-slider-range'),
+                        value: slidervalue,
+                        tooltip_split: $(this).attr('data-slider-tooltip_split'),
+                        tooltip: $(this).attr('data-slider-tooltip'),
+                        tooltip_position: 'bottom'
+                    });
+
+
+                    $("#priceRange").on('change', function () {
+                        var maxvalue = $(".tooltip-max .tooltip-inner").text().replace(/\$/g, "");
+                        maxparse = parseInt(maxvalue);
+                        minvalue = $(".tooltip-min .tooltip-inner").text().replace(/\$/g, "");
+                        minparse = parseInt(minvalue);
+                        switch (true) {
+                            case (maxparse < $('#range1').attr('data-range')):
+                                $('#range1').prop('checked', true);
+                                $('#range2, #range3, #range4, #range5').prop('checked', false);
+                                break;
+                            case (maxparse < $('#range2').attr('data-range')):
+                                $('#range1, #range2').prop('checked', true);
+                                $('#range3, #range4, #range5').prop('checked', false);
+                                break;
+                            case (maxparse < $('#range3').attr('data-range')):
+                                $('#range1, #range2, #range3').prop('checked', true);
+                                $('#range4, #range5').prop('checked', false);
+                                break;
+                            case (maxparse < $('#range4').attr('data-range')):
+                                $('#range1, #range2, #range3, #range4').prop('checked', true);
+                                $('#range5').prop('checked', false);
+                                break;
+                            case (maxparse == $('#range5').attr('data-range')):
+                                $('#range1, #range2, #range3, #range4, #range5').prop('checked', true);
+                                break;
+                                $('#range1').prop('checked', true);
+                        }
+
+                        if (minparse > $('#range1').attr('data-range')) {
+                            $('#range1').prop('checked', false);
+                        }
+                        if (minparse >= $('#range2').attr('data-range')) {
+                            $('#range1, #range2').prop('checked', false);
+                        }
+                        if (minparse >= $('#range3').attr('data-range')) {
+                            $('#range1, #range2, #range3').prop('checked', false);
+                        }
+                        if (minparse >= $('#range4').attr('data-range')) {
+                            $('#range1, #range2, #range3, #range4').prop('checked', false);
+                        }
+
+                    });
+
+
+                    //Onchange function checkbox on/off
+
+                });
+
+
+                $('.rangeCheck').on('change', function () {
+
+                    if ($(".rangeCheck:checked").length == 0) {
+                        $('#range1').prop('checked', true);
+                        $('.max-slider-handle').css("left", "17.3311%");
+                        $('.slider-selection').css("width", "17.3311%");
+                        $('.tooltip-max').css("left", "17.3311%");
+                        $('.tooltip-max .tooltip-inner').html('$' + $('#range1').attr('data-range'));
+                    }
+
+                    if ($("#range1:checked").length == 1) {
+                        $('.max-slider-handle').css("left", "17.3311%");
+                        $('.slider-selection').css("width", "17.3311%");
+                        $('.tooltip-max').css("left", "17.3311%");
+                        $('.tooltip-max .tooltip-inner').html('$' + $('#range1').attr('data-range'));
+
+                    }
+
+
+                    if ($("#range1:checked,#range2:checked").length == 2) {
+                        $('.max-slider-handle').css("left", "33.3311%");
+                        $('.slider-selection').css("width", "33.3311%");
+                        $('.tooltip-max').css("left", "33.3311%");
+                        $('.tooltip-max .tooltip-inner').html('$' + $('#range2').attr('data-range'));
+
+                    }
+
+
+                    if ($("#range1:checked,#range3:checked").length == 2) {
+                        $('#range2').prop('checked', true);
+                        $('.max-slider-handle').css("left", "66.6622%");
+                        $('.slider-selection').css("width", "66.6622%");
+                        $('.tooltip-max').css("left", "66.6622%");
+                        $('.tooltip-max .tooltip-inner').html('$' + $('#range3').attr('data-range'));
+
+                    }
+
+
+                    if ($("#range1:checked,#range4:checked").length == 2) {
+                        $('#range2, #range3').prop('checked', true);
+                        $('.max-slider-handle').css("left", "93.3271%");
+                        $('.slider-selection').css("width", "93.3271%");
+                        $('.tooltip-max').css("left", "93.3271%");
+                        $('.tooltip-max .tooltip-inner').html('$' + $('#range4').attr('data-range'));
+
+                    }
+
+
+                    if ($("#range1:checked,#range5:checked").length == 2) {
+                        $('#range2, #range3, #range4').prop('checked', true);
+                        $('.max-slider-handle').css("left", "100%");
+                        $('.slider-selection').css("width", "100%");
+                        $('.tooltip-max').css("left", "100%");
+                        $('.tooltip-max .tooltip-inner').html('$' + $('#range5').attr('data-range'));
+
+                    }
+
+
+                    if ($("#range2:checked,#range4:checked").length == 2) {
+                        $('#range3').prop('checked', true);
+                        $('.max-slider-handle').css("left", "93.3271%");
+                        $('.slider-selection').css("width", "93.3271%");
+                        $('.tooltip-max').css("left", "93.3271%");
+                        $('.tooltip-max .tooltip-inner').html('$' + $('#range4').attr('data-range'));
+                    }
+
+                    if ($("#range2:checked,#range5:checked").length == 2) {
+                        $('#range3, #range4').prop('checked', true);
+                        $('.max-slider-handle').css("left", "100%");
+                        $('.slider-selection').css("width", "100%");
+                        $('.tooltip-max').css("left", "100%");
+                        $('.tooltip-max .tooltip-inner').html('$' + $('#range5').attr('data-range'));
+                    }
+
+                    if ($("#range3:checked,#range5:checked").length == 2) {
+                        $('#range4').prop('checked', true);
+                        $('.max-slider-handle').css("left", "100%");
+                        $('.slider-selection').css("width", "100%");
+                        $('.tooltip-max').css("left", "100%");
+                        $('.tooltip-max .tooltip-inner').html('$' + $('#range5').attr('data-range'));
+
+                    }
+
+                    if ($("#range1").is(':checked')) {
+                        $('.min-slider-handle').css("left", "0%");
+                        $('.tooltip-min').css("left", "0%");
+                        $('.tooltip-min .tooltip-inner').html('$' + $('#range1').attr('data-range'));
+
+                    } else {
+                        $('.min-slider-handle').css("left", "17.1429%");
+                        $('.tooltip-min').css("left", "17.1429%");
+                        $('.tooltip-min .tooltip-inner').html('$' + $('#range1').attr('data-range'));
+
+                    }
+
+
+
+                });
+
+
+            });
+
+
+
+        })(jQuery);
+    </script>
+    <script>
+
+        (() => {
+            'use strict'
+            document.querySelectorAll('[data-bs-toggle="tooltip"]')
+                .forEach(tooltip => {
+                    new bootstrap.Tooltip(tooltip)
+                })
+            document.querySelectorAll('[data-bs-toggle="popover"]')
+                .forEach(popover => {
+                    new bootstrap.Popover(popover)
+                })
+
+            const toastPlacement = document.getElementById('toastPlacement')
+            if (toastPlacement) {
+                document.getElementById('selectToastPlacement').addEventListener('change', function () {
+                    if (!toastPlacement.dataset.originalClass) {
+                        toastPlacement.dataset.originalClass = toastPlacement.className
+                    }
+
+                    toastPlacement.className = `${toastPlacement.dataset.originalClass} ${this.value}`
+                })
+            }
+            document.querySelectorAll('.bd-example .toast')
+                .forEach(toastNode => {
+                    const toast = new bootstrap.Toast(toastNode, {
+                        autohide: false
+                    })
+
+                    toast.show()
+                })
+            const toastTrigger = document.getElementById('liveToastBtn')
+            const toastLiveExample = document.getElementById('liveToast')
+            if (toastTrigger) {
+                toastTrigger.addEventListener('click', () => {
+                    const toast = new bootstrap.Toast(toastLiveExample)
+
+                    toast.show()
+                })
+            }
+            const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+            const alertTrigger = document.getElementById('liveAlertBtn')
+
+            const appendAlert = (message, type) => {
+                const wrapper = document.createElement('div')
+                wrapper.innerHTML = [
+                    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                    `   <div>${message}</div>`,
+                    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                    '</div>'
+                ].join('')
+
+                alertPlaceholder.append(wrapper)
+            }
+
+            if (alertTrigger) {
+                alertTrigger.addEventListener('click', () => {
+                    appendAlert('could not find this function', 'success')
+                })
+            }
+            document.querySelectorAll('.bd-example-indeterminate [type="checkbox"]')
+                .forEach(checkbox => {
+                    if (checkbox.id.includes('Indeterminate')) {
+                        checkbox.indeterminate = true
+                    }
+                })
+            document.querySelectorAll('.bd-content [href="#"]')
+                .forEach(link => {
+                    link.addEventListener('click', event => {
+                        event.preventDefault()
+                    })
+                })
+            const exampleModal = document.getElementById('exampleModal')
+            if (exampleModal) {
+                exampleModal.addEventListener('show.bs.modal', event => {
+                    // Button that triggered the modal
+                    const button = event.relatedTarget
+                    // Extract info from data-bs-* attributes
+                    const recipient = button.getAttribute('data-bs-whatever')
+
+                    // Update the modal's content.
+                    const modalTitle = exampleModal.querySelector('.modal-title')
+                    const modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+                    modalTitle.textContent = `New message to ${recipient}`
+                    modalBodyInput.value = recipient
+                })
+            }
+            const myOffcanvas = document.querySelectorAll('.bd-example-offcanvas .offcanvas')
+            if (myOffcanvas) {
+                myOffcanvas.forEach(offcanvas => {
+                    offcanvas.addEventListener('show.bs.offcanvas', event => {
+                        event.preventDefault()
+                    }, false)
+                })
+            }
+        })()
+
+    </script>
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 500) {
+                $("header").addClass("fixed")
+                $(".refres").removeClass("back-to-top-fixed")
+            }
+            else {
+                $("header").removeClass("fixed")
+                $(".refres").addClass("back-to-top-fixed")
+            }
+        })
+    </script>
+</body>
+
+</html>
